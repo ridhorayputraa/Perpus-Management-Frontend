@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Button, Header, TextInput } from "../../Components";
+import { Button, Gap, Header, TextInput } from "../../Components";
 
 const SignIn = () => {
   return (
@@ -10,7 +10,8 @@ const SignIn = () => {
       <TextInput /> */}
       <View style={styles.container}>
         <Text>foskofkso</Text>
-        <Button text="Ridho ganteng"/>
+        <Button text="Sign In" />
+        <Gap height={16}/>
       </View>
     </View>
   );

@@ -9,8 +9,8 @@ import React from "react";
 
 type typeButton = {
   text: string;
-  colorButton: string;
-  textColor: string;
+  colorButton?: string;
+  textColor?: string;
 };
 
 const Button = ({
@@ -38,5 +38,7 @@ const styles = StyleSheet.create({
 
   text: {
     textAlign: "center",
+    fontFamily: "Poppins-Medium",
+    fontSize: 14,
   },
 });
