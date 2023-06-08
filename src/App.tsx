@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from "react-native/Libraries/NewAppScreen";
+import { SignIn } from "./Pages";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -32,7 +33,7 @@ type SectionProps = PropsWithChildren<{
 function App(): JSX.Element {
   return (
     <View>
-      <Text>okee</Text>
+      <SignIn />
     </View>
   );
 }
