@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import { Header, TextInput } from "../../Components";
+import { Button, Header, TextInput } from "../../Components";
 
 const SignIn = () => {
   return (
@@ -9,7 +9,8 @@ const SignIn = () => {
       {/* <Text>SignIn</Text>
       <TextInput /> */}
       <View style={styles.container}>
-       <Text>foskofkso</Text>
+        <Text>foskofkso</Text>
+        <Button text="Ridho ganteng"/>
       </View>
     </View>
   );

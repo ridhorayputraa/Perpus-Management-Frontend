@@ -25,6 +25,7 @@ import {
   ReloadInstructions,
 } from "react-native/Libraries/NewAppScreen";
 import { SignIn } from "./Pages";
+import { NavigationContainer } from "@react-navigation/native";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -32,11 +33,10 @@ type SectionProps = PropsWithChildren<{
 
 function App(): JSX.Element {
   return (
-    
+    <NavigationContainer>
       <SignIn />
-  
+    </NavigationContainer>
   );
 }
-
 
 export default App;
