@@ -26,6 +26,7 @@ import {
 } from "react-native/Libraries/NewAppScreen";
 import { SignIn } from "./Pages";
 import { NavigationContainer } from "@react-navigation/native";
+import Router from "./Routers/Router";
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -34,7 +35,7 @@ type SectionProps = PropsWithChildren<{
 function App(): JSX.Element {
   return (
     <NavigationContainer>
-      <SignIn />
+      <Router />
     </NavigationContainer>
   );
 }

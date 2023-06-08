@@ -9,8 +9,8 @@ type HeaderProps = {
 const Header = ({ header, subHeader }: HeaderProps) => {
   return (
     <View style={styles.container}>
-      <Text>{header}</Text>
-      <Text>{subHeader}</Text>
+      <Text style={styles.title}>{header}</Text>
+      <Text style={styles.subTitle}>{subHeader}</Text>
     </View>
   );
 };
@@ -23,7 +23,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingTop: 30,
     paddingBottom: 24,
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: "column",
+    // alignItems: "center",
+  },
+  title: {
+    color: "#020202",
+    fontSize: 22,
+    fontFamily: "Poppins-Medium",
+  },
+  subTitle: {
+    fontFamily: "Poppins-Light",
+    color: " #8D92A3",
+    fontSize: 14,
   },
 });

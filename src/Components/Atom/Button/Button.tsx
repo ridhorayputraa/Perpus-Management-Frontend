@@ -11,15 +11,17 @@ type typeButton = {
   text: string;
   colorButton?: string;
   textColor?: string;
+  onPress?: any;
 };
 
 const Button = ({
   text,
   colorButton = "#FFC700",
   textColor = "#020202",
+  onPress,
 }: typeButton) => {
   return (
-    <TouchableOpacity activeOpacity={0.7}>
+    <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
       <View style={[styles.container, { backgroundColor: colorButton }]}>
         <Text style={[styles.text, { color: textColor }]}>{text}</Text>
       </View>
